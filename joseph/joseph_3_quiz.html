@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div id="content" class="container"></div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- EDIT THESE ITEMS BELOW THIS LINE -->
+
+    <script>
+      // header
+      const h = "Joseph 3 Recap";
+      // question and answer; use the `delimQna` to separate the question from the answer and `delimAs` within the answer to separate the different list items
+      const qna = [
+        "Psalm 63:4#~#I will praise you as long as I live,and in your name I will lift up my hands.",
+        "Psalm 47:1#~#Clap your hands, all you nations; shout to God with cries of joy.",
+        "Psalm 150:4#~#Praise Him with tambourine and dancing",        
+        `Worship Song - HOPE#~#<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r_t5xitQjIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+        `Prisoners' Dreams Video#~#<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/zGqLtucEzqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+        "<a href='https://biblehub.com/niv/genesis/40.htm' target='_blank' class='text-light'><u>Genesis 40</u></a>",
+        "How long did Joseph have to wait in prison after interpreting the dreams of his fellow prisoners?#~#2 FULL YEARS!<br>(╯°□°）╯︵ ┻━┻",
+        "Who asked Joseph to help understand 2 dreams?#~#Pharaoh, who was the king of Egypt",
+        "What did Joseph become?#~#Second-in-command to the Pharaoh. In charge of the whole land of Egypt.",
+        `Pharaoh's Dreams Video#~#<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JflitN-pPy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,        
+        "<a href='https://biblehub.com/niv/genesis/41.htm' target='_blank' class='text-light'><u>Genesis 41</u></a>",
+        `Musical Chairs#~#<audio controls><source src="musical chairs song.mp3" type="audio/mpeg"></audio>`,
+        "Who did Joseph meet in prison? (40:1)#~#The Cupbearer and@the Baker of Pharaoh the king of Egypt",
+        "How did Joseph know what the different dreams meant? (40:8)#~#Joseph knew that only God knew the meaning of these dreams, so he relied on God to interpret the dreams.",
+        "Did anything good come from Joseph's time in prison? How does this show that God is in control?#~#<textarea class='form-control'></textarea>",
+        "What was the most disappointing part of his time in prison? (40:23)#~#The cupbearer, who Joseph had helped, forgot Joseph.",
+        "What did Pharaoh's two dreams mean? (41:25-27)#~#There was going to be 7 years of plenty, followed by 7 years of famine (famine = widespread hunger)",
+        "Why did God use two different dreams for the same message? (41:32)#~#To tell Pharaoh that God was definitely going to do it@and that it was going to happen soon",
+        "What, in this story, shows that God was in control and working out his plan in Joseph's life?<br>(40:3, 8, 41:9, 16, 38)#~#<textarea class='form-control'></textarea>",
+        "When is it really hard to wait for something? What have you learned about God that should make it easier to wait?#~#<textarea class='form-control'></textarea>",
+        "Which promise has God made that you wish would happen sooner? What should you be doing while you wait?#~#<textarea class='form-control'></textarea>",
+      ];
+
+      // process items
+      var hContent = "<title>" + h + "</title><h1>" + h + "</h1>"
+
+      // some consts
+      const buttonOptions = ["primary", "success", "danger", "warning", "info", "dark"];
+      const delimQna = "#~#";
+      const delimAs = "@";
+      
+      var i = 0;
+      
+      // split items 
+      var qnaContent = ``
+      for (qnaItem of qna) {
+        let qnaSplit = qnaItem.split(delimQna);
+        let qnaQuestion = qnaSplit[0];
+        // handles when there is no answer to the question
+        let qnaAnswers = []
+        if (qnaSplit.length > 1) {
+          qnaAnswers = qnaSplit[1].split(delimAs);
+        }
+        let qnaAnswersCode = ""
+        
+        for (qnaAnswer of qnaAnswers) {
+          qnaAnswersCode = qnaAnswersCode + `<li>` + qnaAnswer + `</li>`;
+        }
+        qnaAnswersCode = `<ol>` + qnaAnswersCode + `</ol>`;
+
+        let iString = i.toString();
+        
+        qnaContent = qnaContent + `<p>
+          <button class="btn btn-` + buttonOptions[i % buttonOptions.length] + `" type="button" data-toggle="collapse" data-target="#collapse` + iString + `" aria-expanded="false" aria-controls="collapse` + iString + `">
+            <div style="white-space:normal;">` + qnaQuestion + `</div></button>
+            <div class="collapse" id="collapse` + iString + `">
+              <div class="card card-body">` + qnaAnswersCode + `</div>
+              </div>
+              </p>
+          `
+          i++;
+  }
+
+      // script proper
+      const htmlContent = hContent + qnaContent;
+
+      window.addEventListener("load", function () {
+        document.getElementById("content").innerHTML = htmlContent;
+      })
+
+      
+
+
+
+
+    </script>
+    
+
+  </body>
+</html>
+  
+
