@@ -10,6 +10,7 @@ resources for kids ministry
 6. [Jehovah Jireh](https://youtu.be/JXXIDxbrzF8)7. 7. 
 8. [How Deep the Father's Love for Us](https://www.youtube.com/watch?v=A0CDqG5STPM)
 9. [Come People of the Risen King](https://www.youtube.com/watch?v=9j07fbld3uY)
+10. [In Christ Alone (My Hope Is Found)](https://youtu.be/rn9-UNer6MQ)
 
 # videos
 1. [Abraham tested](https://youtu.be/N5aP78z9CxU)
