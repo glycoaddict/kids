@@ -17,3 +17,38 @@ resources for kids ministry
 2. [Bob Fitts - Sacrifice](https://www.youtube.com/watch?v=RcjkJp9VxY8&t=17s)
 3. [The priest with the dirty clothes](https://youtu.be/biHTLw1nc9k?t=14)
 4. [the prince's poison cup](https://www.youtube.com/watch?v=1pZa-F2SzAE&t=1s)
+
+# confession and assurance
+
+*Merciful God,
+we confess that we have sinned against you
+in thought, word, and deed,
+by what we have done,
+and by what we have left undone.
+
+We have not loved you
+with our whole heart and soul
+and mind and strength.
+
+We have not loved our neighbors as ourselves.
+
+In your mercy,
+forgive what we have been,
+help us amend what we are,
+and direct what we shall be,
+so that we may delight in your will
+and walk in your ways,
+to the glory of your holy name.*
+
+# assurance
+
+1 John 1:9 
+ If we confess our sins, the LORD is faithful and just and will forgive us our sins and purify us from all unrighteousness.
+
+Hear the good news!
+Christ died for us,
+Christ rose for us,
+Christ reigns in power for us,
+Christ prays for us.
+Anyone who is in Christ is a new creation.
+The old life has gone; a new life has begun.
