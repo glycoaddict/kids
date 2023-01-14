@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <div id="content" class="container"></div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- EDIT THESE ITEMS BELOW THIS LINE -->
+
+    <script>
+      // header
+      const h = "Exodus Lesson 2";
+      // question and answer; use the `delimQna` to separate the question from the answer and `delimAs` within the answer to separate the different list items
+      const qna = [
+        `Psalm 103:6-8#~#<div class="std-text"><div class="poetry top-05"><p class="line"><span id="en-NIV-15556" class="text Ps-103-6"><sup class="versenum">6&nbsp;</sup>The <span style="font-variant: small-caps" class="small-caps">Lord</span> works righteousness</span><br><span class="indent-1"><span class="indent-1-breaks">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="text Ps-103-6">and justice for all the oppressed.<sup class="crossreference" data-cr="#cen-NIV-15556B" data-link="(<a href=&quot;#cen-NIV-15556B&quot; title=&quot;See cross-reference B&quot;>B</a>)">(<a href="#cen-NIV-15556B" title="See cross-reference B">B</a>)</sup></span></span></p></div> <div class="poetry top-05"><p class="line"><span id="en-NIV-15557" class="text Ps-103-7"><sup class="versenum">7&nbsp;</sup>He made known<sup class="crossreference" data-cr="#cen-NIV-15557C" data-link="(<a href=&quot;#cen-NIV-15557C&quot; title=&quot;See cross-reference C&quot;>C</a>)">(<a href="#cen-NIV-15557C" title="See cross-reference C">C</a>)</sup> his ways<sup class="crossreference" data-cr="#cen-NIV-15557D" data-link="(<a href=&quot;#cen-NIV-15557D&quot; title=&quot;See cross-reference D&quot;>D</a>)">(<a href="#cen-NIV-15557D" title="See cross-reference D">D</a>)</sup> to Moses,</span><br><span class="indent-1"><span class="indent-1-breaks">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="text Ps-103-7">his deeds<sup class="crossreference" data-cr="#cen-NIV-15557E" data-link="(<a href=&quot;#cen-NIV-15557E&quot; title=&quot;See cross-reference E&quot;>E</a>)">(<a href="#cen-NIV-15557E" title="See cross-reference E">E</a>)</sup> to the people of Israel:</span></span><br><span id="en-NIV-15558" class="text Ps-103-8"><sup class="versenum">8&nbsp;</sup>The <span style="font-variant: small-caps" class="small-caps">Lord</span> is compassionate and gracious,<sup class="crossreference" data-cr="#cen-NIV-15558F" data-link="(<a href=&quot;#cen-NIV-15558F&quot; title=&quot;See cross-reference F&quot;>F</a>)">(<a href="#cen-NIV-15558F" title="See cross-reference F">F</a>)</sup></span><br><span class="indent-1"><span class="indent-1-breaks">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="text Ps-103-8">slow to anger, abounding in love.</span></span></p> </div></div>`,
+        `Worship Song - In Christ Alone#~#<iframe width="560" height="315" src="https://www.youtube.com/embed/rn9-UNer6MQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+        "<a href='https://biblehub.com/niv/exodus/3.htm' target='_blank' class='text-light'><u>Exodus 3</u></a>",
+        "QUIZ",
+        "What did Moses do that got him into trouble in Egypt?#~#Murdered an Egyptian<br>(╯°□°）╯︵ ┻━┻",
+        "Why did Moses do this?#~#The Egyptian was beating a Hebrew slave and Moses took revenge.",
+        "How did God appear to Moses?#~#As a burning bush that was not consumed; it was radiating glory and holiness like a fire.",
+        "Why did God act to save his people?#~#They were miserable and suffering in Egypt as slaves@God had made a promise to Abraham to bless his descendants",
+        "What was Moses' first objection to God and what was God's solution?#~#Who am I - I am a nobody.@God: 'I will be with you!'",
+        "What was Moses' second objection to God and what was God's solution?#~#I don't know your name.@God: 'My name is YHWH, which means I AM WHO I AM, the One who is eternal and without beginning or end.'",
+        "What was Moses' third objection to God and what was God's solution?#~#They won't believe me.@God: 'I will perform miracles to make them believe you.'",
+        "What was Moses' fourth objection to God and what was God's solution?#~#I speak bad.@God: 'I will teach you what to say!'",
+        "What was Moses' final objection to God and what was God's solution?#~#I don't want to.@God: 'I will send your brother Aaron with you and he will speak for you.'",        
+        "DISCUSSION",
+        "At the start of the story, How did Moses feel about God's people?#~#hopeless, Moses tried once but was powerless to help",
+        "At the start of the story, How did Moses feel about God's?#~#Moses had no idea who he was (3:13), although he had heard stories about him (3:6)",
+        "At the start of the story, How did Moses feel about Pharaoh?#~#Most powerful king in the world, untouchable, invincible, the cruel ruler oppressing God's people",
+        "After God met Moses, what changed about Moses' perspective about God's people?#~#No longer hopeless because God was going to rescue them!",
+        "How about how Moses thought about God?#~#God revealed his personal name to Moses and Moses now knows him.",
+        "How about how Moses thought about Pharaoh?#~#God was going to use pharaoh to display God's power to save his people.",
+      ];
+
+      // process items
+      var hContent = "<title>" + h + "</title><h1>" + h + "</h1>"
+
+      // some consts
+      const buttonOptions = ["primary", "success", "danger", "warning", "info", "dark"];
+      const delimQna = "#~#";
+      const delimAs = "@";
+      
+      var i = 0;
+      
+      // split items 
+      var qnaContent = ``
+      for (qnaItem of qna) {
+        let qnaSplit = qnaItem.split(delimQna);
+        let qnaQuestion = qnaSplit[0];
+        // handles when there is no answer to the question
+        let qnaAnswers = []
+        if (qnaSplit.length > 1) {
+          qnaAnswers = qnaSplit[1].split(delimAs);
+        }
+        let qnaAnswersCode = ""
+        
+        for (qnaAnswer of qnaAnswers) {
+          qnaAnswersCode = qnaAnswersCode + `<li>` + qnaAnswer + `</li>`;
+        }
+        qnaAnswersCode = `<ol>` + qnaAnswersCode + `</ol>`;
+
+        let iString = i.toString();
+        
+        qnaContent = qnaContent + `<p>
+          <button class="btn btn-` + buttonOptions[i % buttonOptions.length] + `" type="button" data-toggle="collapse" data-target="#collapse` + iString + `" aria-expanded="false" aria-controls="collapse` + iString + `">
+            <div style="white-space:normal;">` + qnaQuestion + `</div></button>
+            <div class="collapse" id="collapse` + iString + `">
+              <div class="card card-body">` + qnaAnswersCode + `</div>
+              </div>
+              </p>
+          `
+          i++;
+  }
+
+      // script proper
+      const htmlContent = hContent + qnaContent;
+
+      window.addEventListener("load", function () {
+        document.getElementById("content").innerHTML = htmlContent;
+      })
+
+      
+
+
+
+
+    </script>
+    
+
+  </body>
+</html>
+  
+
