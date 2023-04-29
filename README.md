@@ -52,3 +52,7 @@ Christ reigns in power for us,
 Christ prays for us.
 Anyone who is in Christ is a new creation.
 The old life has gone; a new life has begun.
+
+# games
+
+[Google Docs of Kids Games](https://docs.google.com/document/d/1d2Po1clZCYJH4gJT4TmQfwA74LhVmRpAWlvWNtLgpwA/edit?usp=sharing)
