@@ -11,7 +11,8 @@ resources for kids ministry
 8. [How Deep the Father's Love for Us](https://www.youtube.com/watch?v=A0CDqG5STPM)
 9. [Come People of the Risen King](https://www.youtube.com/watch?v=9j07fbld3uY)
 10. [In Christ Alone (My Hope Is Found)](https://youtu.be/rn9-UNer6MQ)
-
+11. [CityAlight Good and Gracious King Lyrics](https://www.youtube.com/watch?v=zS-XBEAyIjI)
+12. [CityAlight Yet no I But Through Christ in Me](https://www.youtube.com/watch?v=l2viHNp0ZA8) 
 # videos
 1. [Abraham tested](https://youtu.be/N5aP78z9CxU)
 2. [Bob Fitts - Sacrifice](https://www.youtube.com/watch?v=RcjkJp9VxY8&t=17s)
